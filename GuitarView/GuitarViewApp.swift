@@ -15,7 +15,7 @@ struct GuitarViewApp: App {
   
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentListView()
         } .windowStyle(.plain)
 
         ImmersiveSpace(id: "ImmersiveScene") {
