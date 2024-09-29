@@ -10,24 +10,16 @@ import SwiftUI
 @main
 struct GuitarViewApp: App {
 
-    @State private var appModel = AppModel()
-
+   
+    @State private var currentStyle: ImmersionStyle = .full
+  
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(appModel)
-        }
+        } .windowStyle(.plain)
 
-        ImmersiveSpace(id: appModel.immersiveSpaceID) {
+        ImmersiveSpace(id: "ImmersiveScene") {
             ImmersiveView()
-                .environment(appModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.full), in: .full)
+        }.immersionStyle(selection: $currentStyle, in: .full)
     }
 }
