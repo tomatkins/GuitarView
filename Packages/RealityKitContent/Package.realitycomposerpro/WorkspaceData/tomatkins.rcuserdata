@@ -1,0 +1,113 @@
+{
+  "advancedEditorSelectedIdentifier" : "ProjectBrowser",
+  "openSceneRelativePaths" : [
+    "ImmersiveScene.usda",
+    "Scene.usda"
+  ],
+  "recentIdentifiers" : {
+    "D66134B1-3681-4A8E-AFE5-29F257229F3B" : [
+
+    ],
+    "E9F6D524-C8B9-496E-9B22-83C6F023B05C" : [
+
+    ]
+  },
+  "sceneCameraHistory" : {
+    "D66134B1-3681-4A8E-AFE5-29F257229F3B" : [
+      {
+        "date" : 749350916.225644,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          0,
+          1.2209946,
+          1.2209946,
+          1
+        ]
+      },
+      {
+        "date" : 749350915.109248,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          0,
+          1.3114604,
+          1.3114605,
+          1
+        ]
+      }
+    ],
+    "E9F6D524-C8B9-496E-9B22-83C6F023B05C" : [
+      {
+        "date" : 749350359.717838,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          0.04079938,
+          1.8702109,
+          1.7873709,
+          1
+        ]
+      },
+      {
+        "date" : 749350352.195062,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          -0.06991911,
+          2.4726803,
+          1.1849008,
+          1
+        ]
+      }
+    ]
+  },
+  "sceneViewportBackgroundColors" : {
+
+  },
+  "selectedSceneRelativePath" : "Scene.usda"
+}
