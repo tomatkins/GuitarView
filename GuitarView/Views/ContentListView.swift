@@ -71,7 +71,7 @@ The electric bass guitar was invented by Leo Fender in 1951 with the introductio
                         .font(.largeTitle)
                         .foregroundColor(.orange)
                 } detail: {
-                    // 20
+                
                     HStack {
                         Button("Open ImmersiveSpace") {
                             Task {
@@ -97,12 +97,6 @@ The electric bass guitar was invented by Leo Fender in 1951 with the introductio
         }
     
     }
-
-
-
-
-
-
 
 
 
