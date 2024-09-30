@@ -47,24 +47,52 @@ The electric bass guitar was invented by Leo Fender in 1951 with the introductio
                 } detail: {
                     if let selectedGuitarType = selectedGuitarType {
                         GuitarTypeView(guitarType: selectedGuitarType)
-                        } else {
-                            Text("Select a Guitar Type to see it's details.")
-                        }
+                    } else {
+                        Text("Select a Guitar Type to see it's details.")
                     }
+                }
                 .tabItem {
-                  Image(systemName: "guitars.fill")
-                  Text("Guitar Types")
+                    Image(systemName: "guitars.fill")
+                    Text("Guitar Types")
                 }
                 NavigationSplitView {
-                  Text("Volume Tab")
-                    .font(.largeTitle)
-                    .foregroundColor(.orange)
+                    Text("Volume Tab")
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
                 } detail: {
-                  VolumeView()
+                    VolumeView()
                 }
+                .tabItem {
+                    Image(systemName: "cube")
+                    Text("Volume")
                 }
-            }     .padding()
+                NavigationSplitView {
+                    Text("Immersive Tab")
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
+                } detail: {
+                    // 20
+                    HStack {
+                        Button("Open ImmersiveSpace") {
+                            Task {
+                                let result = await openImmersiveScene(id: "ImmersiveScene")
+                                isShowingImmersive = true
+                                if case .error = result {
+                                    print("Error loading scene.")
+                                    isShowingImmersive = false
+                                }
+                            }
+                        }.foregroundColor(.blue)
+                    }
+                }
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("Immersive")
+                }
+            }.padding()
+                .opacity(isShowingImmersive ? 0 : 1)
             
+        }
             
         }
     
