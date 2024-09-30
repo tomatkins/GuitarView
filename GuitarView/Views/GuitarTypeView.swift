@@ -12,10 +12,9 @@ struct GuitarTypeView: View {
     let guitarType: GuitarType
     
     var body: some View {
-        
         VStack {
             Text(guitarType.name)
-                .font(.largeTitle)
+                .font(.extraLargeTitle)
             Text(guitarType.content)
             Spacer()
         }
