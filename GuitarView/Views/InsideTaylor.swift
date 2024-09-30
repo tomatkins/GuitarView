@@ -8,10 +8,10 @@
 import SwiftUI
 import RealityKit
 
-struct SkyView: View {
+struct InsideTaylor: View {
     var body: some View {
       RealityView { content in
-        guard let resource = try? await TextureResource(named: "skyView") else {
+        guard let resource = try? await TextureResource(named: "insidetaylor") else {
           return
         }
         var material = UnlitMaterial()
@@ -29,5 +29,5 @@ struct SkyView: View {
 }
 
 #Preview {
-    SkyView()
+    InsideTaylor()
 }

@@ -51,29 +51,22 @@ The electric bass guitar was invented by Leo Fender in 1951 with the introductio
                             Text("Select a Guitar Type to see it's details.")
                         }
                     }
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 }
             }     .padding()
             
             
-            
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-
-            ToggleImmersiveSpaceButton()
         }
     
     }
 
+
+
+
+
+
+
+
+
 #Preview(windowStyle: .automatic) {
     ContentListView()
-        .environment(AppModel())
 }
