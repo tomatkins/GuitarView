@@ -14,7 +14,6 @@ struct ContentListView: View {
     @State private var selectedGuitarType: GuitarType? = nil
     @Environment(\.openImmersiveSpace) var openImmersiveScene
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveScene
-    
     @State private var isShowingImmersive = false
     
     let guitartypes = [
@@ -91,6 +90,15 @@ The electric bass guitar was invented by Leo Fender in 1951 with the introductio
                 }
             }.padding()
                 .opacity(isShowingImmersive ? 0 : 1)
+            
+            Button("Close ImmersiveSpace") {
+                Task {
+                    await dismissImmersiveScene()
+                    print("Dismissing Complete")
+                    isShowingImmersive = false
+                }
+              } .foregroundColor(.red)
+                    .opacity(isShowingImmersive ? 1 : 0)
             
         }
             
