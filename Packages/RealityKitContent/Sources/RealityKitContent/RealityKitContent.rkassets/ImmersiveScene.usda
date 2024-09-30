@@ -23,7 +23,7 @@ def Xform "Root"
         prepend references = @greyles.usdz@
     )
     {
-        float3 xformOp:scale = (0.1, 0.1, 0.1)
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
         float3 xformOp:translate = (0.00019230694, 0, 0.009335756)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
