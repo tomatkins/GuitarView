@@ -15,6 +15,50 @@
   "sceneCameraHistory" : {
     "D66134B1-3681-4A8E-AFE5-29F257229F3B" : [
       {
+        "date" : 749352031.548237,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          0,
+          17.863981,
+          17.863985,
+          1
+        ]
+      },
+      {
+        "date" : 749352017.181366,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.7071069,
+          -0.70710677,
+          0,
+          0,
+          0.70710677,
+          0.7071069,
+          0,
+          0,
+          166.68724,
+          166.68727,
+          1
+        ]
+      },
+      {
         "date" : 749350916.225644,
         "title" : "Untitled",
         "transform" : [
@@ -109,5 +153,5 @@
   "sceneViewportBackgroundColors" : {
 
   },
-  "selectedSceneRelativePath" : "Scene.usda"
+  "selectedSceneRelativePath" : "ImmersiveScene.usda"
 }
